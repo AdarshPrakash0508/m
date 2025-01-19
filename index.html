@@ -20,8 +20,8 @@
         
         <div class="progressbar_container" id="progressbar_container">
            <div class="progress_duration_meter">
-            <div id="current_time">0:00</div>
-            <div id="duration">2:44</div>
+            <div id="current_time"></div>
+            <div id="duration"></div>
            </div> 
            <div class="progress_div" id="progress_div">
             <div class="progress" id="progress"></div>
@@ -46,9 +46,9 @@
       const prev = document.getElementById("prev");
       const next = document.getElementById("next");
 
-      let progress = document.getElementById("progress");
-      let total_duration = document.getElementById("duration");
-      let current_time = document.getElementById("current_time");
+      const progress = document.getElementById("progress");
+      const total_duration = document.getElementById("duration");
+      const current_time = document.getElementById("current_time");
       const progress_div = document.getElementById("progress_div");
 
       const songs = [
@@ -76,9 +76,114 @@
             name: "Dekhoon Tujhe To Pyaar Aaye",
             title: "Dekhoon Tujhe To Pyaar Aaye",
             artist: "Himesh",
-            audio: "musics/Dekhoon Tujhe To Pyaar Aaye.mp3"
-            
-        }    
+            audio: "musics/Dekhoon Tujhe To Pyaar Aaye.mp3",
+            Image : "images/Dekhoon Tujhe To Pyaar Aaye.jpg"
+        },  
+        {
+            name: "Naina Ashq na ho",
+            title: "Naina Ashq na ho",
+            artist: "Arjit",
+            audio: "musics/Naina Ashq na ho.mp3",
+            Image : "images/Naina Ashq na ho.jpg"
+        },
+        {
+            name: "Khairiyat (sad)",
+            title: "Khairiyat (Sad)",
+            artist: "ArJit",
+            audio: "musics/Khairiyat (sad).mp3",
+            Image : "images/Khairiyat (Sad).jpg"
+        },
+        {
+            name: "Ae Watan",
+            title: "Ae Watan",
+            artist: "Arjit",
+            audio: "musics/Ae Watan.mp3",
+            Image : "images/Ae Watan.jpg"
+        },
+        {
+            name: "Agar Tum Saath Ho",
+            title: "Agar Tum Saath Ho",
+            artist: "Arjit",
+            audio: "musics/Agar Tum Saath Ho.mp3",
+            Image : "images/Agar Tum Saath Ho.jpg"
+        },
+        {
+            name: "Chunar",
+            title: "Chunar",
+            artist: "Arjit",
+            audio: "musics/Chunar.mp3",
+            Image : "images/Chunar.jpg"
+        },
+        {
+            name: "Desh Mere",
+            title: "Desh Mere",
+            artist: "Arjit",
+            audio: "musics/Desh Mere.mp3",
+            Image : "images/Desh Mere.jpg"
+        },
+        {
+            name: "Dhokha",
+            title: "Dhokha",
+            artist: "Arjit",
+            audio: "musics/Dhokha.mp3",
+            Image : "images/Dhokha.jpg"
+        },
+        {
+            name: "Galti Se Mistake",
+            title: "Galti Se Mistake",
+            artist: "Arjit",
+            audio: "musics/Galti Se Mistake.mp3",
+            Image : "images/Galti Se Mistake.jpg"
+        },
+        {
+            name: "Hamari Adhuri Kahani",
+            title: "Hamari Adhuri Kahani",
+            artist: "Arjit",
+            audio: "musics/Hamari Adhuri Kahani.mp3",
+            Image : "images/Hamari Adhuri Kahani.jpg"
+        },
+        {
+            name: "Humdard",
+            title: "Humdard",
+            artist: "Arjit",
+            audio: "musics/Humdard.mp3",
+            Image : "images/Humdard.jpg"
+        },
+        {
+            name: "Mere Yaaraa",
+            title: "Mere Yaaraa",
+            artist: "Arjit",
+            audio: "musics/Mere Yaaraa.mp3",
+            Image : "images/Mere Yaaraa.jpg"
+        },
+        {
+            name: "Nashe Si Chadh Gayi",
+            title: "Nashe Si Chadh Gayi",
+            artist: "Arjit",
+            audio: "musics/Nashe Si Chadh Gayi.mp3",
+            Image : "images/Nashe Si Chadh Gayi.jpg"
+        },
+        {
+            name: "Neki Ki Raah",
+            title: "Neki Ki Raah",
+            artist: "Arjit",
+            audio: "musics/Neki Ki Raah.mp3",
+            Image : "images/Neki Ki Raah.jpg"
+        },
+        {
+            name: "Pachtaoge",
+            title: "Pachtaoge",
+            artist: "Arjit",
+            audio: "musics/Pachtaoge.mp3",
+            Image : "images/Pachtaoge.jpg"
+        },
+        {
+            name: "Tera Yaar Hoon Main",
+            title: "Tera Yaar Hoon Main",
+            artist: "Arjit",
+            audio: "musics/Tera Yaar Hoon Main.mp3",
+            Image : "images/Tera Yaar Hoon Main.jpg"
+        }
       ];
 
       let isPlaying = false;
